@@ -130,7 +130,7 @@ const App = () => {
 
       <div className="flex-1 flex flex-col justify-center items-center p-4 md:p-10 pt-[80px]">
         <div
-          className="relative bg-cover bg-center w-full h-[60vh] md:h-[80vh]"
+          className="relative bg-cover bg-center w-full h-[80vh] md:h-[80vh]"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1598414425509-f3195c738b6d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWxlfHx8fGVufDB8fHx8fA%3D%3D')`,
           }}
@@ -162,12 +162,12 @@ const App = () => {
                 isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
               }`}
             >
-              <div className="relative flex justify-center items-center p-4">
+              <div className="relative flex justify-center items-center ">
            
                 <img
                   src={skins[currentSkin]}
                   alt="Mobile Skin"
-                  className="w-40 sm:w-48 md:w-56 lg:w-64 transition-opacity duration-1000 ease-in-out p-3 rounded-lg shadow-lg"
+                  className="w-40 sm:w-48 md:w-56 lg:w-64 transition-opacity duration-1000 ease-in-out p-3 rounded-lg shadow-lg pb-4"
                 />
               </div>
             </div>
@@ -209,29 +209,37 @@ const App = () => {
         </div>
 
 
-
-      
-
     
+        <div className="mt-10 w-full h-[60vh] bg-cover bg-center relative overflow-hidden transition-transform duration-700 ease-in-out hover:scale-105"
+    >
 
-        <div className="mt-10 w-full h-[60vh] bg-cover bg-center relative overflow-hidden transition-transform duration-700 ease-in-out hover:scale-105" 
-  style={{ backgroundImage: `url(https://www.wrapcart.com/cdn/shop/files/2_8e96b0a3-c234-40f2-a847-3550ada3e98e.jpg?v=1715349298&width=1370)` }}>
+  <div className="absolute inset-0 transition-opacity duration-500 h-[80vh]"></div>
 
- 
-  <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity duration-500"></div>
+  <div className="flex flex-col px-4 sm:px-8 lg:px-16">
+    <h1 className="lg:text-3xl  text-2xl font-bold text-[#FB6542] text-center mt-4 pt-8">
+      YOUR STORE SKINNOVATE
+    </h1>
 
+    <div className="flex flex-col lg:flex-row justify-between items-center flex-grow mt-4 pt-5 ">
+      <div className="w-full lg:w-1/2 p-5 ">
+        <h2 className="lg:text-5xl pb-8 font-bold text-3xl text-black  animate__animated animate__bounceIn animate__delay-1s transition-opacity duration-700 ease-in-out :pl-2 lg:pl-[90px] text-[30px] pl-[30px]">
+          Elevate Your Style <br />with Our Skins!
+        </h2>
+      
+      </div>
 
-  <div className="flex items-center justify-center h-full">
-    <h2 className="lg:text-5xl text-3xl p-3 text-white text-center animate__animated animate__bounceIn animate__delay-1s transition-opacity duration-700 ease-in-out">
-      Elevate Your Style with Our Skins!
-    </h2>
+      <div className="w-full lg:w-1/2 h-[32vh] flex items-center justify-center ">
+        <img src="https://media3.giphy.com/media/Vw0sa0Ri7ZG83wKFJF/giphy.webp?cid=790b7611ajhs5ohk74bo27drppf262m9sdpxeokrvyazc9b8&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Skin Image" className="h-full object-cover" />
+      </div>
+    </div>
   </div>
-
 
   <div className="absolute bottom-5 left-0 right-0 text-center animate__animated animate__fadeInUp animate__delay-1s">
-
+    {/* Additional content can go here */}
   </div>
 </div>
+
+
 
 
 
