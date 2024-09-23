@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import skin1 from '/Images/03iimage.png';
-import skin2 from '/Images/02iimage.png';
-import skin3 from '/Images/04iimage.png';
-import skin4 from '/Images/05iimage.png';
-import skin5 from '/Images/06iimage.png';
+import skin1 from '/Images/03iimage.jpg';
+import skin2 from '/Images/02iimage.jpg';
+import skin3 from '/Images/03iimage.jpg';
+
 import placeholder1 from '/Images/10 phone.jpg';
 import placeholder2 from '/Images/06phone.jpg';
 import placeholder3 from '/Images/03 phone.jpg';
@@ -16,7 +15,7 @@ import newImage2 from '/Images/new2.webp';
 import newImage3 from '/Images/new3.webp';
 
 const App = () => {
-  const skins = [skin1, skin2, skin3, skin4, skin5];
+  const skins = [skin1, skin2, skin3,];
   const [currentSkin, setCurrentSkin] = useState(0);
   const [showMore, setShowMore] = useState(false);
   const [scrollAnimation, setScrollAnimation] = useState(false);
